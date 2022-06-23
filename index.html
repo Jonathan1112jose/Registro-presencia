@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE HERMANOS</title>  
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/a0/9a/fb/a09afb1ce9da6dce4b7ef38b902ed210.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">  
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="./scripts/app.js" type="module"></script>
+</head>
+<body>
+  <!--Membrecia-->
+  <div class="title">
+    <h2 class="ui center aligned icon header header-user">
+      Registro de hermanos
+      <i class="circular users icon" id="header-user"></i>
+    </h2>
+  </div>
+   <!--FORMULARIO-->
+    <div class="container two column stackable ui grid">
+      <form class="ui form ten wide column card" id="form">
+        <div class="field">
+          <div class="input-field col s6">
+            <input id="name" type="text" class="validate" placeholder="NOMBRE:" required>
+          </div>
+        </div>
+        <div class="field">
+          <div class="input-field col s6">
+            <input id="privilege" type="text" class="validate" placeholder="PRIVILEGIO:">
+          </div>
+        </div>
+        <div class="field">
+          <div class="input-field col s12">
+            <input id="phone" type="tel" class="validate" required placeholder="NÚMERO DE TELEFONO:" >
+          </div>
+        </div>
+        <div class="field">
+          <div class="input-field col s12">
+            <input id="address" type="text" class="validate" required  placeholder="DIRECCION: " >
+          </div>
+        </div>
+        <div class="field">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate" placeholder="EMAIL:"> 
+          </div>
+        </div>
+        <div class="field ui inverted ">
+          <button class="ui huge  yellow button" id="btn-form" type="submit" name="action"><i class="paper plane icon"></i>Guardar</button>
+        </div>
+      </form>
+      <div class="field ui inverted">
+      </div>
+      <ul class="user-container ui card five wide column"></ul>
+    </div>
+
+      
+
+</body>
+</html>

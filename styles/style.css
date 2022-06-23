@@ -1,0 +1,38 @@
+body{
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/984/810/non_2x/abstract-dark-blue-luxury-premium-background-with-luxury-triangles-pattern-and-gold-lighting-lines-free-vector.jpg") !important;
+  background-size: cover !important;
+}
+#header-user{
+  background-color: #fff;
+  color: #000;
+
+}
+.header-user{ 
+  color: white !important;
+}
+.title{
+  margin-bottom: 40px !important;
+}
+.user-container{
+  margin: 0px !important;
+}
+.form{
+  margin: 0px !important;
+}
+
+input{
+  background: rgba(247, 247, 247,0) !important;
+  border: none !important;
+  color: white !important;
+}
+
+.card{
+  background: rgba(247, 247, 247,0) !important;
+   
+}
+
+.user{
+  background: #c4b8a7 !important;
+  background-size: cover !important;
+  color: white !important;
+}
