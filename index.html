@@ -12,7 +12,41 @@
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <script src="./scripts/app.js" type="module"></script>
 </head>
+<style>
+  .background{
+    background-color: rgba(255,255,255,0.13);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    border-radius: 10px;
+  }
+  .form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+  }
+  input{
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  ::placeholder{
+    color: #e5e5e5;
+  }
+</style>
 <body>
+  <nav>
+    <div class="ui secondary pointing menu" id="logout">
+      <a class="item" href="login.html">
+        <img src="https://i.pinimg.com/originals/a0/9a/fb/a09afb1ce9da6dce4b7ef38b902ed210.jpg" alt="logo" width="50px">
+      </a>
+    </div>
+  </nav>
   <!--Membrecia-->
   <div class="title">
     <h2 class="ui center aligned icon header header-user">
@@ -22,30 +56,30 @@
   </div>
    <!--FORMULARIO-->
     <div class="container two column stackable ui grid">
-      <form class="ui form ten wide column card" id="form">
+      <form class="ui form ten wide column card background" id="form">
         <div class="field">
           <div class="input-field col s6">
-            <input id="name" type="text" class="validate" placeholder="NOMBRE:" required>
+            <input id="name" type="text" class="validate input-register" placeholder="NOMBRE:" required>
           </div>
         </div>
         <div class="field">
           <div class="input-field col s6">
-            <input id="privilege" type="text" class="validate" placeholder="PRIVILEGIO:">
+            <input id="privilege" type="text" class="validate input-register" placeholder="PRIVILEGIO:">
           </div>
         </div>
         <div class="field">
           <div class="input-field col s12">
-            <input id="phone" type="tel" class="validate" required placeholder="NÚMERO DE TELEFONO:" >
+            <input id="phone" type="tel" class="validate input-register" required placeholder="NÚMERO DE TELEFONO:" >
           </div>
         </div>
         <div class="field">
           <div class="input-field col s12">
-            <input id="address" type="text" class="validate" required  placeholder="DIRECCION: " >
+            <input id="address" type="text" class="validate input-register" required  placeholder="DIRECCION: " >
           </div>
         </div>
         <div class="field">
           <div class="input-field col s12">
-            <input id="email" type="email" class="validate" placeholder="EMAIL:"> 
+            <input id="email" type="email" class="validate input-register" placeholder="EMAIL:"> 
           </div>
         </div>
         <div class="field ui inverted ">
@@ -54,7 +88,7 @@
       </form>
       <div class="field ui inverted">
       </div>
-      <ul class="user-container ui card five wide column"></ul>
+      <ul class="user-container ui card five wide column background"></ul>
     </div>
 
       

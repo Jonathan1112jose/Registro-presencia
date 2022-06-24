@@ -9,7 +9,7 @@
     doc,
     updateDoc
   } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-firestore.js";
-
+  
   const firebaseConfig = {
     apiKey: "AIzaSyBRXJlqR5XvloWPJD7K7w260XCAltur2sg",
     authDomain: "db-test-498e4.firebaseapp.com",
@@ -23,8 +23,9 @@
   
 
   // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
+  export const app = initializeApp(firebaseConfig);
   const db = getFirestore();
+
 
   //add register firebase
  export const saveTask = (name,mail,phone,privilege,address)=>{

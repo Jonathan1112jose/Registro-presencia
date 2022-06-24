@@ -20,7 +20,7 @@ body{
   margin: 0px !important;
 }
 
-input{
+.input-register{
   background: rgba(247, 247, 247,0) !important;
   border: none !important;
   color: white !important;
@@ -34,5 +34,13 @@ input{
 .user{
   background: #c4b8a7 !important;
   background-size: cover !important;
+  color: white !important;
+}
+
+/*************login: css***************/
+
+.fomr-login{
+  background: #fff !important;
+  border: none !important;
   color: white !important;
 }
